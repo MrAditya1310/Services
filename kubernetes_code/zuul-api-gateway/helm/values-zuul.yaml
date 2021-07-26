@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image: 
+  repository: aditya012/zuul-app-0.1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 9999
+  name: zuul
+  targetPort: 9999
+
+containers:
+  name: zuul-container

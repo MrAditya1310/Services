@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image: 
+  repository: aditya012/ui-web-app-0.1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 8080
+  name: ui
+  targetPort: 8080
+
+containers:
+  name: ui-container

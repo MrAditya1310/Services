@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image: 
+  repository: aditya012/wishlist-app-0.1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 1003
+  name: wishlist
+  targetPort: 5000
+
+containers:
+  name: wishlist-container

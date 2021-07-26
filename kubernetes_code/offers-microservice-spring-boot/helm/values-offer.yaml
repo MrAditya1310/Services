@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image: 
+  repository: aditya012/offer-app-0.1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 1001
+  name: offer
+  targetPort: 1001
+
+containers:
+  name: offer-container

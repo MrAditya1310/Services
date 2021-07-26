@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image: 
+  repository: aditya012/shoes-app-0.1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 1002
+  name: shoes
+  targetPort: 1002
+
+containers:
+  name: shoes-container
